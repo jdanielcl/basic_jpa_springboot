@@ -1,0 +1,3 @@
+INSERT INTO ALIEN VALUES(101, 'Daniel', 'Python');
+INSERT INTO ALIEN VALUES(102, 'Sandra', 'Javascript');
+INSERT INTO ALIEN VALUES(103, 'Felipe', 'NodeJS');
