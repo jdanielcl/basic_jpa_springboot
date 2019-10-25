@@ -23,8 +23,8 @@ public class RestAPI {
 	public List<Alien> getAliens() {
 		return repo.findAll();
 	}
-	
-	@RequestMapping("/alien/{aid}")
+	//@RequestMapping(path="/alien/{aid}", produces= {"application/xml"})
+	@RequestMapping(path="/alien/{aid}")
 	@ResponseBody
 	public Optional<Alien> getAlien(@PathVariable("aid") int aid) {
 		return repo.findById(aid);
