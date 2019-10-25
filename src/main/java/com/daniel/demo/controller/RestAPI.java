@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.daniel.demo.Model.Alien;
@@ -59,4 +60,9 @@ public class RestAPI {
 		return response;
 	}
 	
+	@PutMapping("/alien")
+	public Alien updateAlien(Alien alien) {
+		repo.save(alien);
+		return alien;
+	}
 }
